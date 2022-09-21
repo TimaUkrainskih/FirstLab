@@ -71,12 +71,13 @@ namespace lab1
 
             return result;
 
+
         }
 
         public void Print()
         {
 
-            if (this.key == "Triangle")
+          if (this.key == "Triangle")
             {
                 Console.WriteLine($"Фигура: {this.key}\nПериметр = {this.PerimeterCalculator()}");
             }
