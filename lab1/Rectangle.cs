@@ -27,12 +27,12 @@ namespace lab1
             this.perimeter_ = PerimeterCalculator();
             this.area_ = AreaCalculator();
         }
-        public double AreaCalculator()
+        double AreaCalculator()
         {
             return side1_ * side2_;
         }
 
-        public double PerimeterCalculator()
+        double PerimeterCalculator()
         {
             return side1_ * 2 + side2_ * 2;
         }
