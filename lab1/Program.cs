@@ -16,7 +16,7 @@ namespace exercise1
                 $"\nlong\nmax: {long.MaxValue} min: {long.MinValue}" +
                 $"\nulong\nmax: {ulong.MaxValue} min: {ulong.MinValue}" +
                 $"\nfloat\nmax: {float.MaxValue} min: {float.MinValue}" +
-                $"\ndoable\nmax: {double.MaxValue} min: {double.MinValue}" );
+                $"\ndoable\nmax: {double.MaxValue} min: {double.MinValue}");
 
             Console.WriteLine("\n\nВторое задание");
             Console.Write("введите длины сторон\nдлина первой стороны: ");
@@ -24,18 +24,18 @@ namespace exercise1
             Console.Write("длина второй стороны: ");
             double side2 = Convert.ToDouble(Console.ReadLine());
             Rectangle tom = new Rectangle(side1, side2);
-            Console.WriteLine($"Площадь: {tom.Area}");
+            Console.WriteLine($"Площадь: {tom.Perimeter}");
 
             Console.WriteLine("\n\nТретье задание");
             Point point1 = new Point(4, 3);
             Point point2 = new Point(1, 1);
             Point point3 = new Point(2, 5);
             Point point4 = new Point(3, 1);
-            
-            Figure figur = new Figure(point1, point2, point3,point4);
-            
+            Point point5 = new Point(4, 5);
+            Figure figur = new Figure(point1, point2, point3, point4, point5);
+
             figur.Print();
-           
+
 
         }
 
