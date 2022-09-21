@@ -18,8 +18,8 @@ namespace lab1
 
         public Figure(Point point_one,Point point_two)
         {
-            point_one_ = point_one;
-            point_two_ = point_two;
+            this.point_one_ = point_one;
+            this.point_two_ = point_two;
         }
         public Figure(Point point_one, Point point_two, Point point_three)
         {
