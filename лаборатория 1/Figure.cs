@@ -56,31 +56,36 @@ namespace lab1
         public double PerimeterCalculator()
         {
             double result = LengthSide(point_one_, point_two_);
-            if (this.key == "Triangle") result += LengthSide(point_two_, point_three_) + LengthSide(point_three_, point_one_);
+            if (this.key == "Triangle")
+                result += LengthSide(point_two_, point_three_) + LengthSide(point_three_, point_one_);
 
-            if (this.key == "Square") result += LengthSide(point_two_, point_three_) + LengthSide(point_three_, point_four_) +
+            else if (this.key == "Square")
+                result += LengthSide(point_two_, point_three_) + LengthSide(point_three_, point_four_) +
                     LengthSide(point_four_, point_one_);
 
-            if (this.key == "Pentagon") result += LengthSide(point_two_, point_three_) + LengthSide(point_three_, point_four_) +
+            else
+                result += LengthSide(point_two_, point_three_) + LengthSide(point_three_, point_four_) +
                     LengthSide(point_four_, point_five_) + LengthSide(point_five_, point_one_);
 
 
+
             return result;
+
 
         }
 
         public void Print()
         {
 
-            if (this.key == "Triangle")
+          if (this.key == "Triangle")
             {
                 Console.WriteLine($"Фигура: {this.key}\nПериметр = {this.PerimeterCalculator()}");
             }
-            if (this.key == "Square")
+            else if (this.key == "Square")
             {
                 Console.WriteLine($"Фигура: {this.key}\nПериметр = {this.PerimeterCalculator()}");
             }
-            if (this.key == "Pentagon")
+            else
             {
                 Console.WriteLine($"Фигура: {this.key}\nПериметр = {this.PerimeterCalculator()}");
             }
